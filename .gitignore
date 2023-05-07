@@ -1,0 +1,9 @@
+# Wally
+/Packages
+/wally.lock
+
+# Luau-LSP
+sourcemap.json
+
+# Selene
+/roblox.toml

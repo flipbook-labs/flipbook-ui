@@ -1,0 +1,11 @@
+[package]
+name = "ashle/flipbook-components"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+React = "core-packages/react@17.0.1-rc.19"
+ReactRoblox = "core-packages/react-roblox@17.0.1-rc.19"
+ReactSpring = "chriscerie/react-spring@1.1.5"
+Sift = "csqrl/sift@0.0.6"
