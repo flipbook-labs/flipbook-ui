@@ -1,2 +1,2 @@
 # flipbook-ui
- React components for the flipbook Roblox storybook plughin
+ React components for the flipbook Roblox storybook plugin.
