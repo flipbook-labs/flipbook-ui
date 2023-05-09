@@ -1,0 +1,31 @@
+{
+	"story": {
+		"description": "Generate a base React story file.",
+		"prefix": "story",
+		"body": [
+			"local lib = script.Parent.Parent",
+			"local Packages = lib.Parent",
+			"",
+			"local React = require(Packages.React)",
+			"local ReactRoblox = require(Packages.ReactRoblox)",
+			"",
+			"local $1 = require(script.Parent.$1)",
+			"",
+			"local function $1Story()",
+			"\treturn React.createElement(React.Fragment, nil, {",
+			"\t\t$1 = React.createElement($1, {}),",
+			"\t})",
+			"end",
+			"",
+			"return function(t: GuiObject)",
+			"\tlocal root = ReactRoblox.createRoot(t)",
+			"\troot:render(React.createElement($1Story))",
+			"",
+			"\treturn function()",
+			"\t\troot:unmount()",
+			"\tend",
+			"end",
+			"",
+		]
+	}
+}
